@@ -1,4 +1,4 @@
-const dataFesta = new Date("March 25, 2026 20:00:00").getTime();
+const dataFesta = new Date("April 04, 2026 13:00:00").getTime();
 
 const contador = document.getElementById("contador");
 
