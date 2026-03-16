@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #a8e6cf, #dcedc1);
   text-align: center;
   padding: 50px;
   animation: aparecer 1.5s;
@@ -9,56 +9,54 @@ body {
 .convite {
   background: white;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: inline-block;
   max-width: 600px;
+  width: 100%;
 }
 
 h1 {
-  color: #e63946;
+  font-family: 'Pacifico', cursive;
+  color: #2e7d32;
+  margin-bottom: 20px;
 }
 
 p {
   font-size: 18px;
+  color: #333;
 }
 
 #contador {
   margin-top: 15px;
-  color: #444;
+  color: #1b5e20;
+  font-weight: bold;
 }
 
-.formulario{
-  margin-top:20px;
-  border-radius:10px;
-  overflow:hidden;
+.formulario {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 
-iframe{
-  border:none;
+iframe {
+  border: none;
+  background: white;
 }
 
+/* Animação */
 @keyframes aparecer {
-  from{
-    opacity:0;
+  from {
+    opacity: 0;
     transform: translateY(30px);
   }
-  to{
-    opacity:1;
+  to {
+    opacity: 1;
     transform: translateY(0);
   }
 }
-.formulario{
-margin-top:20px;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 0 10px rgba(0,0,0,0.15);
-}
 
-iframe{
-border:none;
-background:white;
-}
 /* Responsividade */
 @media (max-width: 600px) {
   body {
@@ -66,12 +64,11 @@ background:white;
   }
 
   .convite {
-    width: 100%;
     padding: 20px;
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   p {
