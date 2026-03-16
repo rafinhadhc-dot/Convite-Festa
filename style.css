@@ -12,6 +12,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: inline-block;
+  max-width: 600px;
 }
 
 h1 {
@@ -27,6 +28,16 @@ p {
   color: #444;
 }
 
+.formulario{
+  margin-top:20px;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+iframe{
+  border:none;
+}
+
 @keyframes aparecer {
   from{
     opacity:0;
@@ -36,4 +47,15 @@ p {
     opacity:1;
     transform: translateY(0);
   }
+}
+.formulario{
+margin-top:20px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+iframe{
+border:none;
+background:white;
 }
