@@ -59,3 +59,26 @@ iframe{
 border:none;
 background:white;
 }
+/* Responsividade */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .convite {
+    width: 100%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  iframe {
+    height: 300px;
+  }
+}
