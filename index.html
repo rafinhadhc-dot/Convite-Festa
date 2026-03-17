@@ -3,33 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <title>Festa Do Rafa</title>
-  <!-- Fonte Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="convite">
-    <h1>Festa Do Rafa 🎉</h1>
+  <!-- Banner -->
+  <header class="banner">
+    <h1>🎉 Festa Do Rafa 🎉</h1>
+    <p>Venha celebrar comigo um dia especial!</p>
+  </header>
 
-    <p><strong>Data:</strong> 04 de Abril de 2026</p>
-    <p><strong>Hora:</strong> 13h00</p>
-    <p><strong>Local:</strong> Avenida Luiz José Costa Leandro, 264 - São Paulo</p>
+  <!-- Informações -->
+  <section class="info">
+    <div class="card">
+      <h2>📅 Data</h2>
+      <p>04 de Abril de 2026</p>
+    </div>
+    <div class="card">
+      <h2>⏰ Hora</h2>
+      <p>13h00</p>
+    </div>
+    <div class="card">
+      <h2>📍 Local</h2>
+      <p>Avenida Luiz José Costa Leandro, 264 - São Paulo</p>
+    </div>
+  </section>
 
+  <!-- Contador -->
+  <section class="contador">
     <h2 id="contador"></h2>
+  </section>
 
-    <h2>Confirmar Presença</h2>
+  <!-- Confirmação -->
+  <section class="confirmacao">
+    <h2>Confirme sua Presença</h2>
     <div class="formulario">
       <iframe 
         src="https://docs.google.com/forms/d/e/1FAIpQLSce9AGiimz9Yef99NKvv8elPmRHJrjX1u2bft-CkGortxzJGA/viewform?usp=publish-editor"
         width="100%" 
-        height="800"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0">
+        height="900"
+        frameborder="0">
         Carregando…
       </iframe>
     </div>
-  </div>
+    <a class="btn-whatsapp" href="https://wa.me/5511999999999?text=Confirmo%20minha%20presença%20na%20festa%20do%20Rafa!" target="_blank">
+      Confirmar pelo WhatsApp
+    </a>
+  </section>
+
+  <!-- Mapa -->
+  <section class="mapa">
+    <h2>Como Chegar</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!..." 
+      width="100%" 
+      height="400" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>© 2026 Festa do Rafa - Todos os direitos reservados</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
