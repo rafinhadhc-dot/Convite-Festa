@@ -1,4 +1,3 @@
-// Data e hora da festa
 const dataFesta = new Date("2026-04-04T13:00:00").getTime();
 const contador = document.getElementById("contador");
 
