@@ -1,58 +1,64 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(to right, #66bb6a, #43a047);
+  background: linear-gradient(to right, #4caf50, #2e7d32); /* verde vibrante */
   text-align: center;
-  padding: 40px;
+  padding: 30px;
 }
 
 .convite {
   background: #ffffff;
-  padding: 50px;
+  padding: 60px; /* mais espaçoso */
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
   display: inline-block;
-  max-width: 900px;
+  max-width: 1000px; /* mais largo */
   width: 100%;
 }
 
 h1 {
   font-family: 'Fredoka One', cursive;
   color: #1b5e20;
-  margin-bottom: 30px;
-  font-size: 48px; /* bem grande */
+  margin-bottom: 40px;
+  font-size: 56px; /* título bem grande */
 }
 
 p {
-  font-size: 24px; /* maior para leitura fácil */
-  color: #222;
-  margin: 12px 0;
+  font-size: 28px; /* texto maior */
+  color: #111;
+  margin: 15px 0;
 }
 
 #contador {
-  margin-top: 25px;
+  margin-top: 30px;
   color: #2e7d32;
   font-weight: bold;
-  font-size: 26px; /* contador grande */
+  font-size: 30px; /* contador grande */
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 40px;
+  color: #1b5e20;
 }
 
 .formulario {
-  margin-top: 30px;
+  margin-top: 40px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 0 15px rgba(0,0,0,0.25);
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
 }
 
 iframe {
   border: none;
   background: #f9f9f9;
   width: 100%;
-  height: 800px; /* bem maior */
+  height: 1000px; /* bem maior para leitura */
 }
 
 /* Responsividade */
 @media (max-width: 600px) {
   body {
-    padding: 20px;
+    padding: 15px;
   }
 
   .convite {
@@ -60,18 +66,22 @@ iframe {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 42px;
   }
 
   p {
-    font-size: 20px;
-  }
-
-  #contador {
     font-size: 22px;
   }
 
+  #contador {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
   iframe {
-    height: 700px;
+    height: 900px; /* ainda grande no celular */
   }
 }
