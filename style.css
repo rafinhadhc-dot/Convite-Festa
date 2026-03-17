@@ -1,87 +1,123 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(to right, #4caf50, #2e7d32); /* verde vibrante */
+  margin: 0;
+  background: #f1f8e9;
+  color: #333;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(to right, #43a047, #2e7d32);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.banner h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 56px;
+}
+.banner p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Cards de informações */
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  padding: 30px;
+  flex: 1 1 250px;
+  text-align: center;
+}
+.card h2 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+/* Contador */
+.contador {
   text-align: center;
   padding: 30px;
 }
-
-.convite {
-  background: #ffffff;
-  padding: 60px; /* mais espaçoso */
-  border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
-  display: inline-block;
-  max-width: 1000px; /* mais largo */
-  width: 100%;
-}
-
-h1 {
-  font-family: 'Fredoka One', cursive;
-  color: #1b5e20;
-  margin-bottom: 40px;
-  font-size: 56px; /* título bem grande */
-}
-
-p {
-  font-size: 28px; /* texto maior */
-  color: #111;
-  margin: 15px 0;
-}
-
 #contador {
-  margin-top: 30px;
-  color: #2e7d32;
+  font-size: 28px;
   font-weight: bold;
-  font-size: 30px; /* contador grande */
-}
-
-h2 {
-  font-size: 32px;
-  margin-top: 40px;
   color: #1b5e20;
 }
 
+/* Confirmação */
+.confirmacao {
+  text-align: center;
+  padding: 40px 20px;
+}
 .formulario {
-  margin-top: 40px;
-  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+}
+iframe {
+  width: 100%;
+  height: 900px;
+  border: none;
+}
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 20px 40px;
+  background: #25D366;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.btn-whatsapp:hover {
+  background: #128C7E;
 }
 
-iframe {
-  border: none;
-  background: #f9f9f9;
-  width: 100%;
-  height: 1000px; /* bem maior para leitura */
+/* Mapa */
+.mapa {
+  padding: 40px 20px;
+  text-align: center;
+}
+.mapa h2 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 /* Responsividade */
 @media (max-width: 600px) {
-  body {
-    padding: 15px;
+  .banner h1 {
+    font-size: 40px;
   }
-
-  .convite {
-    padding: 30px;
+  .banner p {
+    font-size: 18px;
   }
-
-  h1 {
-    font-size: 42px;
-  }
-
-  p {
+  #contador {
     font-size: 22px;
   }
-
-  #contador {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-  iframe {
-    height: 900px; /* ainda grande no celular */
+  .btn-whatsapp {
+    font-size: 22px;
+    padding: 15px 30px;
   }
 }
